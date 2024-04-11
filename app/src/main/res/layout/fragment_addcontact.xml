@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContactFragment"
+    android:id="@+id/addcontacs">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      tools:context=".MainActivity">
+
+      <ImageView
+
+          android:layout_width="134dp"
+          android:layout_height="150dp"
+          android:layout_marginStart="130dp"
+          android:layout_marginTop="80dp"
+          android:src="@drawable/addcontact2"
+          android:textColor="#3049CF">
+      </ImageView>
+
+      <EditText
+          android:id="@+id/tvAddName"
+          android:layout_width="370dp"
+          android:layout_height="63dp"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:ems="10"
+          android:hint="name"
+          android:inputType="text" />
+
+      <EditText
+          android:id="@+id/tvAddPhone"
+          android:layout_width="370dp"
+          android:layout_height="63dp"
+          android:ems="10"
+          android:hint="phone"
+          android:inputType="phone"
+          android:layout_gravity="center"
+          />
+
+
+      <RadioGroup
+          android:id="@+id/ic_male"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:layout_gravity="center"
+          android:orientation="horizontal"
+          >
+
+          <RadioButton
+              android:id="@+id/rBtnMale"
+              android:layout_width="168dp"
+              android:layout_height="84dp"
+              android:layout_gravity="center"
+              android:layout_marginStart="40dp"
+              android:checked="true"
+              android:text="male"
+              android:textSize="14sp"
+
+              />
+
+          <RadioButton
+              android:id="@+id/rBtnFemale"
+              android:layout_width="168dp"
+              android:layout_height="81dp"
+              android:layout_gravity="center"
+              android:text="female"
+              android:textSize="14sp" />
+
+
+      </RadioGroup>
+
+      <Button
+          android:id="@+id/btnAdd"
+          android:layout_width="162dp"
+          android:layout_height="63dp"
+          android:layout_marginBottom="192dp"
+          android:text="save"
+          android:textSize="30sp"
+          android:layout_gravity="center"
+          />
+
+
+  </LinearLayout>
+
+</FrameLayout>

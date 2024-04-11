@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListContactFragment2"
+    android:id="@+id/line1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewContact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <Button
+            android:id="@+id/btnGoToAdd"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="590dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="+"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/btnViewModel"
+            android:layout_width="185dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="590dp"
+            android:text="viewModel"
+            android:onClick="vbn"/>
+
+        <Button
+            android:id="@+id/btnSaveRom"
+            android:layout_width="84dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="500dp"
+            android:text="save rom" />
+
+</FrameLayout>

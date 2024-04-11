@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/ListContact_Fragment2">
+
+    <fragment
+        android:id="@+id/ListContact_Fragment2"
+        android:name="com.example.myapplication6.ListContactFragment2"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_listcontact" >
+        <action
+            android:id="@+id/action_ListContact_Fragment2_to_AddContactFragment"
+            app:destination="@id/AddContactFragment" />
+        <action
+            android:id="@+id/action_ListContact_Fragment2_to_EditContactFragment"
+            app:destination="@id/EditContactFragment" />
+        <action
+            android:id="@+id/action_ListContact_Fragment2_to_viewModelAddContactFragment3"
+            app:destination="@id/viewModelAddContactFragment3" />
+        <action
+            android:id="@+id/action_ListContact_Fragment2_to_fragmentSaveRom"
+            app:destination="@id/fragmentSaveRom" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddContactFragment"
+        android:name="com.example.myapplication6.AddContactFragment"
+        android:label="fragment_save"
+        tools:layout="@layout/fragment_addcontact" >
+        <action
+            android:id="@+id/action_AddContactFragment_to_ListContact_Fragment2"
+            app:destination="@id/ListContact_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/EditContactFragment"
+        android:name="com.example.myapplication6.EditContactFragment"
+        android:label="fragment_edti"
+        tools:layout="@layout/fragment_edti" >
+        <action
+            android:id="@+id/action_EditContactFragment_to_ListContact_Fragment2"
+            app:destination="@id/ListContact_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewModelAddContactFragment3"
+        android:name="com.example.myapplication6.ViewModelAddContactFragment"
+        android:label="fragment_view_model_add_contact"
+        tools:layout="@layout/fragment_view_model_add_contact" >
+        <action
+            android:id="@+id/action_viewModelAddContactFragment3_to_ListContact_Fragment2"
+            app:destination="@id/ListContact_Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSaveRom"
+        android:name="com.example.myapplication6.FragmentSaveRom"
+        android:label="fragment_save_rom"
+        tools:layout="@layout/fragment_save_rom" >
+        <action
+            android:id="@+id/action_fragmentSaveRom_to_ListContact_Fragment2"
+            app:destination="@id/ListContact_Fragment2" />
+    </fragment>
+</navigation>
