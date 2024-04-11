@@ -104,7 +104,7 @@ class ListContactFragment2 : Fragment() {
                 db.userDao().insertUser(user)
                 db.close()
             }
-
+     // aaa
 
 
         }
